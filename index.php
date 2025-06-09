@@ -2,7 +2,7 @@
 // temp_inbox.php - Full mbox-compatible temporary inbox viewer
 
 date_default_timezone_set('UTC');
-$domain = 'wcsd.io';
+$domain = 'example.com';
 $mboxFile = '/var/mail/web';
 $perPage = 10;
 $debugMode = isset($_GET['debug']) && $_GET['debug'] === '1';
