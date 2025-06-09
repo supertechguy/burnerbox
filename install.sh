@@ -7,10 +7,10 @@
 set -e
 
 # Prompt user for configuration
-read -p "Enter custom domain name (e.g., wcsd.io): " DOMAIN
+read -p "Enter custom domain name (e.g., example.com): " DOMAIN
 read -p "Enter install path [/var/www/$DOMAIN]: " INSTALL_PATH
 INSTALL_PATH=${INSTALL_PATH:-/var/www/$DOMAIN}
-read -p "Enter default delivery mailbox email (e.g., web@washk12.tech): " MAILBOX
+read -p "Enter default delivery mailbox email (e.g., web@mydomain.com): " MAILBOX
 MAILUSER=$(echo "$MAILBOX" | cut -d'@' -f1)
 read -p "Enter ServerAdmin email: " ADMIN_EMAIL
 read -p "Enter IP addresses to allow access (space-separated, default: 127.0.0.1): " ALLOWED_IPS
